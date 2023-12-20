@@ -1,0 +1,45 @@
+{
+  "type": "module",
+  "name": "hill-encriptor-js",
+  "version": "1.0.0",
+  "description": "This is an encriptor project",
+  "main": "lib/index.mjs",
+  "scripts": {
+    "test": "npm run test",
+    "build": "babel src -d lib",
+    "start": "node index.mjs"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j17hernandez/hill_encriptor.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Encriptor"
+  ],
+  "author": "j17hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j17hernandez/hill_encriptor/issues"
+  },
+  "homepage": "https://github.com/j17hernandez/hill_encriptor#readme",
+  "dependencies": {
+    "babel": "^6.23.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "babel-cli": "^6.26.0"
+  }
+}
